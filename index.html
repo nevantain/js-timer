@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="messages">
+            <div class="close__msg">x</div>
+            <div class="title__msg"></div>
+            <div class="text__msg"></div>
+        </div>
+        <div class="timer">
+            <div class="time_view">
+                <span class="hours t transition">00</span>
+                :
+                <span class="minutes t transition">00</span>
+                :
+                <span class="seconds t transition">00</span>
+                :
+                <span class="milliseconds t">00</span>
+            </div>
+
+            <div class="manage_btns">
+                <button class="manage_btn start active">Start</button>
+                <button class="manage_btn pause">Stop</button>
+                <button class="manage_btn reset">Reset</button>
+                <button class="manage_btn lapBtn">Lap</button>
+            </div>
+        </div>
+        <div class="laps">
+            <div class="laps__tilte">Results</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

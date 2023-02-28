@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.timer {
+    width: 50%;
+    height: 60%;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.time_view {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    user-select: none;
+}
+
+.time_input {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.i {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.manage_btns {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage_btn {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+    display: none;
+    transition: 0.1s;
+    outline: none;
+}
+
+.manage_btn:hover {
+    width: 105px;
+    background-color: rgb(73, 182, 255);
+    color: rgb(0, 0, 0)
+}
+
+.laps {
+    width: 400px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    border: black 2px solid;
+}
+
+.lap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.f30 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.laps__tilte {
+    font-size: 40px;
+}
+
+.active {
+    display: block;
+}
+
+.transition {
+    transition: 0.5s;
+}
+
+.messages {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: none;
+    padding: 20px;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(255, 71, 71);
+}
+
+.close__msg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.title__msg {
+    font-size: 14px;
+}
+
+.text__msg {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* ====================================================================== */
+
+@media (max-width: 1080px) {
+    .wrapper {
+        align-items: normal;
+    }
+
+    .laps {
+        left: 340px;
+    }
+
+    .timer {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .laps {
+        left: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .laps {
+        left: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .laps {
+        left: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .laps {
+        left: 120px;
+    }
+
+    .time_view {
+        font-size: 35px;
+    }
+
+    .t {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 530px) {
+    .laps {
+        left: 50px;
+    }
+
+    .time_view {
+        font-size: 35px;
+    }
+
+    .t {
+        font-size: 35px;
+    }
+
+    .manage_btns {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    * {
+        overflow-y: scroll;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timer {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .time_view {
+        font-size: 35px;
+    }
+
+    .t {
+        font-size: 35px;
+    }
+
+    .laps {
+        left: 15px;
+        width: 310px;
+        max-height: 330px;
+        font-size: 18px;
+    }
+
+    .lap {
+        overflow: hidden;
+    }
+
+    .f30 {
+        font-size: 22px;
+    }
+}
+
+@media (orientation: portrait) {
+    .wrapper {
+        overflow: scroll;
+    }
+}
